@@ -1,0 +1,83 @@
+.calc__container {
+  width: 25%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.calc__container .calc__controls {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.calc__container .calc__controls .calc__output {
+  background: var(--whiteClr);
+  width: calc(100% - .25rem);
+  min-height: 55px;
+  padding: 1rem;
+  margin: 0 auto .25rem;
+  color: var(--darkClr);
+  border-radius: .25rem;
+  border: none;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.calc__container .calc__controls .control {
+  background: grey;
+  width: 21.5%;
+  width: calc(100% / 4.5);
+  margin: .25rem auto;
+  padding: .75rem 1rem;
+  border-radius: .25rem;
+  color: var(--whiteClr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.calc__container .calc__controls .control:hover, .calc__container .calc__controls .control:active {
+  font-weight: 500;
+}
+
+.calc__container .calc__controls .control.result {
+  background: orange;
+  width: calc(100% / 1.39);
+}
+
+.calc__container .calc__controls .control.del {
+  background: var(--darkOrange);
+  width: calc(100% / 2.1);
+}
+/*# sourceMappingURL=calc_style.css.map */
