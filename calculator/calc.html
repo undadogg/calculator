@@ -1,0 +1,54 @@
+!<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator 2021</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/calc_style.css">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div class="calc__container">
+            <form class="calc__controls" name="calc">
+              <input type="text" name="output" class="calc__output" value="" readonly>
+            
+              <div class="control del" onclick="document.calc.output.value = ''">C</div>
+              <div class="control digit" onclick="document.output.value += '/'">/</div>
+              
+              <div class="control digit" onclick="document.calc.output.value += '*'">*</div>
+              <div class="control digit" onclick="document.calc.output.value += '-'">-</div>
+              <div class="control digit" onclick="document.calc.output.value += '+'">+</div>
+              <div class="control digit" onclick="document.calc.output.value += '0'">0</div>
+              
+              <div class="control digit" onclick="document.calc.output.value += '1'">1</div>
+              <div class="control digit" onclick="document.calc.output.value += '2'">2</div>
+              <div class="control digit" onclick="document.calc.output.value += '3'">3</div>
+              <div class="control digit" onclick="document.calc.output.value += '4'">4</div>
+              
+              <div class="control digit" onclick="document.calc.output.value += '5'">5</div>
+              <div class="control digit" onclick="document.calc.output.value += '6'">6</div>
+              <div class="control digit" onclick="document.calc.output.value += '7'">7</div>
+              <div class="control digit" onclick="document.calc.output.value += '8'">8</div>
+              
+              <div class="control digit" onclick="document.calc.output.value += '9'">9</div>
+              <div class="control digit" onclick="document.calc.output.value += '.'">.</div>
+              <div class="control result" onclick='document.calc.output.value = eval(calc.output.value)'>=</div>
+            </form>
+          </div>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
